@@ -1,0 +1,25 @@
+{
+  "headers": [
+    {
+      "source": "/(.*).woff2",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Origin, Content-Type, Accept"
+        },
+        {
+          "key": "Content-Type",
+          "value": "font/woff2"
+        }
+      ]
+    }
+  ]
+}
