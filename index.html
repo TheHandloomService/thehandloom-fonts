@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Font Test Page</title>
   <style>
     @font-face {
-      font-family: 'Brother1816';
-      src: url('./brother1816-light.woff2') format('woff2');
-      font-weight: 300;
-      font-style: normal;
+      font-family: 'Brother1816-Book';
+      src: url('./Brother1816-Book.woff2') format('woff2');
     }
+    @font-face {
+      font-family: 'Brother1816-Light';
+      src: url('./Brother1816-Light.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Brother1816-Regular';
+      src: url('./Brother1816-Regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'EditorsNote-Light';
+      src: url('./EditorsNote-Light.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'EditorsNote-Medium';
+      src: url('./EditorsNote-Medium.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'EditorsNote-Regular';
+      src: url('./EditorsNote-Regular.woff2') format('woff2');
+    }
+
     body {
-      font-family: 'Brother1816', sans-serif;
+      padding: 40px;
+      font-size: 24px;
+    }
+
+    .font-sample {
+      margin-bottom: 24px;
     }
   </style>
 </head>
 <body>
-  <h1>This is a font load test</h1>
-  <p>If you can see this text styled, the font loaded successfully.</p>
+  <div class="font-sample" style="font-family: 'Brother1816-Book';">This is Brother1816-Book</div>
+  <div class="font-sample" style="font-family: 'Brother1816-Light';">This is Brother1816-Light</div>
+  <div class="font-sample" style="font-family: 'Brother1816-Regular';">This is Brother1816-Regular</div>
+  <div class="font-sample" style="font-family: 'EditorsNote-Light';">This is EditorsNote-Light</div>
+  <div class="font-sample" style="font-family: 'EditorsNote-Medium';">This is EditorsNote-Medium</div>
+  <div class="font-sample" style="font-family: 'EditorsNote-Regular';">This is EditorsNote-Regular</div>
 </body>
 </html>
